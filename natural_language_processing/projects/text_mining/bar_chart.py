@@ -6,8 +6,9 @@ import matplotlib.pyplot as plt
 
 
 def plot_top_words():
+    file_path = "E:\\APPS\\Py\\data_analytics\\data_analytics\\natural_language_processing\\projects\\text_mining\\datasets\\un_declaration_hr_text_data.txt"
     # Read the text file
-    with open('un_declaration_hr_text_data.txt', 'r') as file:
+    with open(file_path, 'r') as file:
         text = file.read()
 
     # Tokenize the text into words
@@ -40,4 +41,4 @@ def plot_top_words():
     plt.title('Top 25 Most Frequent Words')
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig('Top_25_bar_chart')
+    plt.savefig("E:\\APPS\\Py\\data_analytics\\data_analytics\\natural_language_processing\\projects\\text_mining\\output\\top_25_barchart.png")
